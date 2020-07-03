@@ -14,7 +14,7 @@ public class Employee implements Serializable {
 
 
     @Min(value = 0,message = "年龄不能小于{value}")
-    @Max(value = 0,message = "年龄不能大于{value}")
+    @Max(value = 100,message = "年龄不能大于{value}")
     private int age;
 
     @NotEmpty(message = "姓名不能不为空")
